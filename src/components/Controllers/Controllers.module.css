@@ -1,0 +1,38 @@
+.controllers {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 18px;
+    z-index: 99;
+}
+
+.el {
+    margin-top: 8px;
+}
+
+.btn {
+    display: block;
+    cursor: pointer;
+    color: white;
+    background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    width: 49px;
+    font-size: 22px;
+    height: 49px;
+    transition: 0.2s transform ease-in-out;
+}
+
+.btn:hover {
+    transform: translateX(-3.5px);
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

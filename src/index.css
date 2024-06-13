@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root {
+  --bg: #fff;
+  --color: #000;
+}
+
+* {
+  font-family: "Merriweather", serif !important;
+  text-rendering: geometricPrecision !important;
+  font-display: auto;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  overflow-x: hidden;
+}
+
+.app {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.draft {
+  margin-top: 50px;
+}
+
+.draft .draft-author-box {
+  display: block !important;
+}
+.draft .draft-author-box input {
+  margin: 12px 0;
+  width: 100%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+
+}
+
+.draft .d-title {
+  font-weight: 800;
+  font-size: 45px !important;
+}
+
+.draft .d-writer {
+  font-weight: 400;
+  font-size: 19px !important;
+  opacity: 0.68;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+/* ---- quill ----- */
+
+.ql-editor {
+  padding: 10px 0 !important;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* .ql-editor blockquote {
+  font-style: italic;
+} */
+
+.ql-bubble .ql-tooltip {
+    background: rgba(0,0,0,0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 8px !important;
+    transition: 0.2s all !important;
+}
+
+.ql-bubble .ql-picker-options {
+    background: #1a1a1a !important;
+    border-radius: 8px;
+}
